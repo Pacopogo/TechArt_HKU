@@ -15,6 +15,13 @@ namespace PacoUtility
 
         public Vector2 inputDir;
 
+        private Rigidbody rb;
+
+        private void Start()
+        {
+            rb = GetComponent<Rigidbody>();
+        }
+
         public void Move(InputAction.CallbackContext context) =>
             inputDir = context.ReadValue<Vector2>().normalized;
 
