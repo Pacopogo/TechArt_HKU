@@ -5308,6 +5308,7 @@ GameObject:
   - component: {fileID: 420137334}
   - component: {fileID: 420137333}
   - component: {fileID: 420137337}
+  - component: {fileID: 420137338}
   m_Layer: 5
   m_Name: Canvas_(Evil)
   m_TagString: Untagged
@@ -5391,7 +5392,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 868299832}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1892121036}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5420,6 +5421,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &420137338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420137332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf885df8a1245b6448b9ed058c8be673, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VisionSwitch
+  animator: {fileID: 420137337}
+  OnDark:
+    m_PersistentCalls:
+      m_Calls: []
+  OffDark:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &440893022
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22905,11 +22925,35 @@ MonoBehaviour:
     m_ActionId: 6b444451-8a00-4d00-a97e-f47457f736a8
     m_ActionName: 'Player/Look[/Mouse/delta,/Pen/delta]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 420137338}
+        m_TargetAssemblyTypeName: VisionSwitch, Assembly-CSharp
+        m_MethodName: SwitchDark
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
     m_ActionName: 'Player/Attack[/Mouse/leftButton,/Keyboard/enter]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 420137338}
+        m_TargetAssemblyTypeName: VisionSwitch, Assembly-CSharp
+        m_MethodName: SwitchDark
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 852140f2-7766-474d-8707-702459ba45f3
     m_ActionName: 'Player/Interact[/Keyboard/e]'
   - m_PersistentCalls:
@@ -23123,6 +23167,7 @@ Transform:
   m_Children:
   - {fileID: 1012087474}
   - {fileID: 1711314334}
+  - {fileID: 420137336}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1892121037
@@ -25788,5 +25833,4 @@ SceneRoots:
   - {fileID: 2059893256}
   - {fileID: 276005382}
   - {fileID: 96176262}
-  - {fileID: 420137336}
   - {fileID: 1153710843}

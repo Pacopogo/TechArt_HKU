@@ -12,9 +12,7 @@ Shader "Custom/Depth"
     {
         Tags
         {
-            "RenderPipeline" = "UniversalPipeline"
-            "RenderType" = "Transparent"
-            "Queue" = "Transparent"
+            "RenderPipeline" = "UniversalPipeline" "RenderType" = "Transparent" "Queue" = "Transparent"
         }
 
         Pass
